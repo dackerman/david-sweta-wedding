@@ -44,6 +44,7 @@ p:first-letter {
 #photo_header {
     background: url("http://mi9.com/uploads/windows/4670/wedding-ring_1920x1200_83845.jpg") no-repeat scroll 90% 35%;
     border-radius: 5px;
+    display: none;
     height: 200px;
     margin: 0px;
     overflow: hidden;
@@ -57,6 +58,7 @@ p:first-letter {
 
 #carousel_container {
     background-color: #444;
+    border-radius: 5px;
     overflow: hidden;
 }
 
