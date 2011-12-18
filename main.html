@@ -11,9 +11,13 @@
     <ul>
       <li id="home" class="first">Home</li>
       <li id="story">Our Story</li>
-      <li id="photos">Photos</li>
-      <li id="details">Wedding Details</li>
-      <li id="families" class="last">Our Families</li>
+      <li id="party">Wedding Party</li>
+      <li id="events">Wedding Events</li>
+      <li id="rsvp">RSVP</li>
+      <li id="accomodations">Accomodations</li>
+      <li id="tourist">Places to See</li>
+      <li id="registry">Registry</li>
+      <li id="photos" class="last">Photos</li>
     </ul>
   </div>
   <div id="layout">
@@ -67,12 +71,53 @@
 	  taking a picture but rolling a video! Sweta is completely confused at this point... until 
 	  David gets down on one knee and asks her to marry him! After saying “OMG! Are you serious?!?” about 
 	  5 times, David says “Yes, I’m serious!” and after 2 seconds of shock from Sweta, David says “...so 
-	  is that a yes or a no?” and she said “YES! Of course!”... and we have been engaged ever since!</p>
-	  
+	  is that a yes or a no?” and she said “YES! Of course!”... and we have been engaged ever since!</p>  
     </div>
+    <div id="content_party" class="content" style="display: none">
+      <table>
+	<tr>
+	  <th>Sweta's Side</th>
+	  <td>Sweta's Father</td>
+	  <td>Sweta's Mother</td>
+	  <td>Sweta's Sister & Maid of Honor</td>
+	  <td>More people to come soon!</td>
+	</tr>
+	<tr>
+	  <th>David's Side</th>
+	  <td>David's Father</td>
+	  <td>David's Mother</td>
+	  <td>David's Cousin Brother & Best Man</td>
+	  <td>More people to come soon!</td>
+	</tr>
+      </table>
+    </div>
+
+    <div id="content_events" class="content" style="display: none">
+		<h2>Ceremony</h2>
+		More information coming soon!
+		
+		<h2>Reception</h2>
+		More information coming soon!
+	</div>
+
+    <div id="content_rsvp" class="content" style="display: none">
+      <h2>Instructions on how to RSVP are coming soon - stay tuned!</h2>
+    </div>
+
+    <div id="content_accomodations" class="content" style="display: none">
+      <h2>Coming soon!</h2>
+    </div>
+
+    <div id="content_tourist" class="content" style="display: none">
+      <h2>Coming soon!</h2>
+    </div>
+
+    <div id="content_registry" class="content" style="display: none">
+      <h2>Coming soon!</h2>
+    </div>
+
     <div id="content_photos" class="content" style="display: none">
       Content for photos, etc...
-      Basically make one div per nav element, and make it's id "content_" + nav_id
     </div>
   </div>
   <script>
@@ -80,7 +125,6 @@
     carousel.start(get("photo_carousel"));
     navigation.initialize(get("nav"));
 
-    // Dumb utility function for getting elements
     function get(elementString) {
       return document.getElementById(elementString);
     }
