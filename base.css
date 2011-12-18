@@ -36,7 +36,9 @@ body {
 }
 
 #photo_header {
+    background: url("http://mi9.com/uploads/windows/4670/wedding-ring_1920x1200_83845.jpg") no-repeat scroll 90% 35%;
     border-radius: 5px;
+    height: 200px;
     margin: 0px;
     overflow: hidden;
     padding: 0px;
@@ -61,6 +63,7 @@ body {
 }
 
 #photo_carousel > img {
+    cursor: pointer;
     margin-right: 5px;
 }
 
@@ -100,6 +103,32 @@ body {
 
 #nav li:hover {
     background-color: #666;
+}
+
+#lightbox {
+    background: transparent;
+    display: none;
+}
+
+#lightbox_background {
+    background: black;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+}
+
+#lightbox_img {
+    background-color: white;
+    bottom: 20%;
+    left: 20%;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    z-index: 6;
 }
 
 #footer {
