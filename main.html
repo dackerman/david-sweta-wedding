@@ -8,11 +8,11 @@
 <body>
   <div id="nav">
     <ul>
-      <li class="first">Home</li>
-      <li>Our Story</li>
-      <li>Photos</li>
-      <li>Wedding Details</li>
-      <li class="last">Our Families</li>
+      <li id="home" class="first">Home</li>
+      <li id="story">Our Story</li>
+      <li id="photos">Photos</li>
+      <li id="details">Wedding Details</li>
+      <li id="families" class="last">Our Families</li>
     </ul>
   </div>
   <div id="layout">
@@ -32,122 +32,15 @@
         <img src="http://placehold.it/150x150" />
       </div>
     </div>
-    <div id="content">
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      Here is some content! </br>
-      
+    <div id="content_home" class="content">
+      Home content
+    </div>
+    <div id="content_story" class="content" style="visibility: hidden">
+      Content for "Our Story"
+    </div>
+    <div id="content_photos" class="content" style="visibility: hidden">
+      Content for photos, etc...
+      Basically make one div per nav element, and make it's id "content_" + nav_id
     </div>
   </div>
   <script>carousel.start(document.getElementById("photo_carousel"))</script>

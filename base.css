@@ -20,11 +20,12 @@ body {
     margin-top: 10px;
 }
 
-#content {
+.content {
     background-color: #eee;
     border-radius: 5px;
     color: #333;
     padding: 10px;
+    min-height: 200px;
 }
 
 #dave_and_sweta_banner_text {
