@@ -1,0 +1,60 @@
+body {
+    background-color: #ddd;
+    color: #888;
+    font-family: 'Metamorphous', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#layout {
+    background-color: transparent;
+    left: 30%;
+    min-width: 600px;
+    position: absolute;
+    right: 30%;
+    top: 10px;
+}
+
+#content {
+    background-color: #aaa;
+    color: #333;
+    padding: 10px;
+}
+
+#dave_and_sweta_banner_text {
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+
+#photo_header {
+    overflow: hidden;
+}
+
+#nav {
+    background-color: #333;
+    border-radius: 10px 0px 0px 10px;
+    color: white;
+    margin: 5px;
+    position: fixed;
+    right: 70%;
+    top: 10%;
+    width: 225px;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+#nav li {
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: right;
+}
+
+#nav li:hover {
+    background-color: #666;
+}
