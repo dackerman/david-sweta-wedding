@@ -4,7 +4,7 @@ carousel.position = 0;
 carousel.direction = -1;
 carousel.speed = 1;
 carousel.updateSpeed = 50;
-carousel.pictureWidth = 165;
+carousel.pictureWidth = 170;
 
 // set dynamically
 carousel.width = 0;
@@ -29,7 +29,7 @@ carousel.start = function(element) {
     }
 
     element.style.width = (carousel.width / 2) + "px";
-    carousel.minx = -carousel.width / 2 + element.width;
+    carousel.minx = -500;
 
     window.setInterval(function() {
         carousel.position += carousel.direction * carousel.speed;
