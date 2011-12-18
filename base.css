@@ -16,7 +16,9 @@ body {
 }
 
 #content {
-    background-color: #aaa;
+    background-color: #eee;
+    box-shadow: 0px 0px 20px 5px #aaa;
+    border-radius: 5px;
     color: #333;
     padding: 10px;
 }
@@ -28,6 +30,8 @@ body {
 }
 
 #photo_header {
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 5px #aaa;
     overflow: hidden;
 }
 
