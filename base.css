@@ -97,3 +97,14 @@ body {
 #nav li:hover {
     background-color: #666;
 }
+
+#footer {
+    background-color: #555;
+    border-radius: 10px 10px 10px 10px;
+    color:white;
+    font-size: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+}
