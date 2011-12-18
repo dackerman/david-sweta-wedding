@@ -145,6 +145,10 @@
     carousel.start(get("photo_carousel"));
     nav.initialize(get("nav"));
     window.onhashchange = nav.onHashChange;
+
+    if (window.location.hash != "") {
+      nav.onHashChange();
+    }
     
     function get(elementString) {
       return document.getElementById(elementString);
