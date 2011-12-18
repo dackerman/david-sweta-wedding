@@ -1,7 +1,7 @@
 body {
     background-color: #ddd;
     color: #888;
-    font-family: 'Metamorphous', cursive;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -22,6 +22,7 @@ body {
 
 #layout > .banner_text {
     box-shadow: none;
+    font-family: 'Metamorphous', cursive;
     font-size: 2em;
     text-align: center;
     margin: 20px;
@@ -36,7 +37,6 @@ p:first-letter {
     background-color: #eee;
     border-radius: 5px;
     color: #333;
-    font-family: sans-serif;
     padding: 10px;
     min-height: 200px;
 }
@@ -95,6 +95,7 @@ p:first-letter {
 
 #nav li {
     cursor: pointer;
+    font-family: 'Metamorphous', cursive;
     font-size: 1em;
     padding: 10px;
     margin: 0px;
@@ -140,12 +141,15 @@ p:first-letter {
 }
 
 #footer {
-    background-color: #555;
-    border-radius: 10px 10px 10px 10px;
-    color:white;
-    font-size: 0.7em;
+    box-shadow: none;
+    color:#555;
+    font-size: 0.9em;
     margin-top: 10px;
     margin-bottom: 50px;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#footer > span {
+    float: right;
 }
