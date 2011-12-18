@@ -20,6 +20,13 @@ body {
     margin-top: 10px;
 }
 
+#layout > .banner_text {
+    box-shadow: none;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+
 p:first-letter {
     font-family: cursive;
     font-size: 2em;
@@ -32,13 +39,6 @@ p:first-letter {
     font-family: sans-serif;
     padding: 10px;
     min-height: 200px;
-}
-
-#dave_and_sweta_banner_text {
-    box-shadow: none;
-    font-size: 2em;
-    text-align: center;
-    margin: 20px;
 }
 
 #photo_header {
