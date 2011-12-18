@@ -28,7 +28,7 @@ body {
     margin: 20px;
 }
 
-p:first-letter {
+#content_story > p:first-letter {
     font-family: "Times New Roman";
     font-size: 2em;
 }
