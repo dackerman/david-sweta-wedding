@@ -41,6 +41,11 @@ body {
     padding: 0px;
 }
 
+#photo_header img {
+    margin: 0px;
+    padding: 0px;
+}
+
 #carousel_container {
     background-color: #444;
     overflow: hidden;
@@ -63,6 +68,7 @@ body {
     right: 70%;
     top: 200px;
     width: 225px;
+    z-index: 2;
 }
 
 #nav ul {
@@ -77,6 +83,14 @@ body {
     padding: 10px;
     margin: 0px;
     text-align: right;
+}
+
+#nav .first {
+    border-radius: 10px 0px 0px 0px;
+}
+
+#nav .last {
+    border-radius: 0px 0px 0px 10px;
 }
 
 #nav li:hover {
