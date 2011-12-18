@@ -20,6 +20,11 @@ body {
     margin-top: 10px;
 }
 
+p:first-letter {
+    font-family: cursive;
+    font-size: 2em;
+}
+
 .content {
     background-color: #eee;
     border-radius: 5px;
