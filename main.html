@@ -28,14 +28,15 @@
       <img src="http://placehold.it/1000x150/E8117F/E8117F" />
     </div>
     <div id="carousel_container">
-      <div id="photo_carousel">
-        <img src="http://placehold.it/150x150" />
-        <img src="http://placehold.it/150x150" />
-        <img src="http://placehold.it/150x150" />
-        <img src="http://placehold.it/150x150" />
-        <img src="http://placehold.it/150x150" />
-        <img src="http://placehold.it/150x150" />
-      </div>
+      <div id="photo_carousel"></div>
+      <script>
+        carousel.addImage("http://placehold.it/150x150", "one");
+        carousel.addImage("http://placehold.it/150x150", "two");
+        carousel.addImage("http://placehold.it/150x150", "three");
+        carousel.addImage("http://placehold.it/150x150", "four");
+        carousel.addImage("http://placehold.it/150x150", "five");
+        carousel.addImage("http://placehold.it/150x150", "six");
+      </script>
     </div>
     <div id="content_home" class="content">
       <p>Hello and welcome to our wedding website! We are excited to announce that, after a little over 2 years of happiness, 
@@ -128,7 +129,8 @@
     // Start the carousel animation and hook up navigation
     carousel.start(get("photo_carousel"));
     nav.initialize(get("nav"));
-
+    window.onhashchange = nav.onHashChange;
+    
     function get(elementString) {
       return document.getElementById(elementString);
     }
