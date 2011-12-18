@@ -27,11 +27,15 @@ nav.setOnClick = function(elementId) {
 
 nav.navigate = function(elementId) {
     var elements = nav.elements;
+    window.location.hash = "#" + elementId;
+}
+
+nav.onHashChange = function() {
+    var elementId = window.location.hash.slice(1);
     nav.highlight(nav.elements, elementId,
                   nav.setContentHidden, nav.setContentVisible);
     nav.highlight(nav.elements, elementId,
                   nav.setNavNormal, nav.setNavHighlight);
-
 }
 
 nav.highlight = function(elements, elementId, callback, highlightCallback) {
@@ -50,7 +54,7 @@ nav.setContentVisible = function(navElement) {
     }
 }
 
-nav.setContentHidden = function(navElement) {
+ppnav.setContentHidden = function(navElement) {
     var content = nav.getContent(navElement.id);
     if (content != undefined) {
         content.style.display = "none";
