@@ -4,6 +4,7 @@
   <link href="base.css" rel="stylesheet" type="text/css" />
   <link href="http://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="carousel.js"></script>
+  <script type="text/javascript" src="navigation.js"></script>
 </head>
 <body>
   <div id="nav">
@@ -43,6 +44,15 @@
       Basically make one div per nav element, and make it's id "content_" + nav_id
     </div>
   </div>
-  <script>carousel.start(document.getElementById("photo_carousel"))</script>
+  <script>
+    // Start the carousel animation and hook up navigation
+    carousel.start(get("photo_carousel"));
+    navigation.initialize(get("nav"));
+
+    // Dumb utility function for getting elements
+    function get(elementString) {
+      return document.getElementById(elementString);
+    }
+  </script>
 </body>
 </html>
