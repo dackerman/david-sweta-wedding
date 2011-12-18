@@ -23,7 +23,7 @@ carousel.start = function(element) {
     }
 
     window.setInterval(function() {
-        carousel.position = carousel.position + carousel.direction * carousel.speed;
+        carousel.position += carousel.direction * carousel.speed;
         element.style.left = carousel.position + "px";
         if (carousel.position < carousel.minx || carousel.position > carousel.maxx) {
             carousel.direction *= -1;

@@ -54,7 +54,7 @@ nav.setContentVisible = function(navElement) {
     }
 }
 
-ppnav.setContentHidden = function(navElement) {
+nav.setContentHidden = function(navElement) {
     var content = nav.getContent(navElement.id);
     if (content != undefined) {
         content.style.display = "none";
