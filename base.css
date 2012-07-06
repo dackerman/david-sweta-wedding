@@ -114,6 +114,36 @@ body {
     background-color: #666;
 }
 
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.weddingparty_column {
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    width: 40%;
+}
+
+.weddingparty_column > h2 {
+    text-align: center;
+}
+
+.weddingparty_column > div > p {
+    text-align: center;
+}
+
+.weddingparty_img {
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    display: block;
+    height: 100px;
+    margin: auto;
+    padding: 5px;
+    width: 100px;
+}
+
 #lightbox {
     background: transparent;
     display: none;
