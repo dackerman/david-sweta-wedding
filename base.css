@@ -8,10 +8,9 @@ body {
 
 #layout {
     background-color: transparent;
-    left: 30%;
+    margin: auto;
     width: 800px;
-    position: absolute;
-    right: 30%;
+    position: relative;
     top: 10px;
 }
 
@@ -87,8 +86,8 @@ h1 {
     border-radius: 10px 0px 0px 10px;
     color: #333;
     margin: 5px;
-    position: fixed;
-    right: 72%;
+    position: absolute;
+    left: -220px;
     top: 200px;
     width: 200px;
     z-index: 2;
