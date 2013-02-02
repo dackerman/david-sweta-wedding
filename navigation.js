@@ -1,6 +1,6 @@
 var nav = {}
 
-nav.navHighlightColor = "#533";
+nav.navHighlightColor = "#ddd";
 
 nav.elements = []; // elements that can be navigated to
 
