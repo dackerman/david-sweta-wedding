@@ -73,7 +73,7 @@ h1 {
     margin: 5px;
     padding: 10px;
     position: relative;
-    width: 2000px;
+    width: 2600px;
 }
 
 #photo_carousel > img {
@@ -193,8 +193,9 @@ td {
     margin-right: auto;
     padding: 10px;
     padding-bottom: 50px;
-    position: relative;
+    position: absolute;
     top: 100px;
+    left: 40px;
     width: 700px;
     z-index: 6;
 }

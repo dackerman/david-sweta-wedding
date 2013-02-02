@@ -19,7 +19,7 @@
         <li id="registries" class="last">Registries</li>
       </ul>
     </div>
-  
+
     <div class="banner_text">
       David & Sweta's Wedding
     </div>
@@ -30,6 +30,14 @@
     <div id="carousel_container">
       <div id="photo_carousel"></div>
       <script>
+        carousel.addImage("photos/thumbs/christmas-morning.jpg");
+        carousel.addImage("photos/thumbs/buchanan-trip.jpg");
+        carousel.addImage("photos/thumbs/atlanta-trip-2011.jpg");
+        carousel.addImage("photos/thumbs/watching-tennis.jpg");
+        carousel.addImage("photos/thumbs/sf-trip.jpg");
+        carousel.addImage("photos/thumbs/outside.jpg");
+        carousel.addImage("photos/thumbs/googlers-night-out.jpg");
+        carousel.addImage("photos/thumbs/buchanan2.jpg");
         carousel.addImage("photos/thumbs/David's-Going-Away-004.jpg");
         carousel.addImage("photos/thumbs/Halloween-Gathering-003.jpg");
         carousel.addImage("photos/thumbs/Omaha-Couple's-Photo-Shoot-035.jpg");
@@ -231,17 +239,17 @@
       <span>Built as a couple
       using <a href="https://github.com/dackerman/david-sweta-wedding" target="_blank">github</a> and <a href="http://www.gnu.org/s/emacs/" target="_blank">emacs</a>.</span>
     </div>
+  
+    <div id="lightbox">
+      <div id="lightbox_background"></div>
+      <div id="lightbox_border">
+        <img id="lightbox_img" src="#">
+      </div>
+    </div>
   </div>
 
   <div id="flowers_left"></div>
   <div id="flowers_right"></div>
-  
-  <div id="lightbox">
-    <div id="lightbox_background"></div>
-    <div id="lightbox_border">
-      <img id="lightbox_img" src="#">
-    </div>
-  </div>
 
   <script>
     // Start the carousel animation and hook up navigation
