@@ -5,6 +5,7 @@
   <link href="http://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="carousel.js"></script>
   <script type="text/javascript" src="navigation.js"></script>
+  <script type="text/javascript" src="moment.min.js"></script>
 </head>
 <body>
   <div id="layout">
@@ -13,10 +14,8 @@
         <li id="story" class="first">Our Story</li>
         <li id="party">Wedding Party</li>
         <li id="events">Wedding Events</li>
-        <li id="rsvp">RSVP</li>
-        <li id="accomodations">Accomodations</li>
-        <li id="tourist">Places to See</li>
-        <li id="registries" class="last">Registries</li>
+        <li id="registries">Registries</li>
+        <li id="photos" class="last">Photos <img src="photos/new!.png"/></li>
       </ul>
     </div>
 
@@ -24,7 +23,7 @@
       David & Sweta's Wedding
     </div>
     <div class="banner_text">
-      June 15, 2013
+      June 15, 2013 <span id="married_countup"></span>
     </div>
     <div id="photo_header"> </div>
     <div id="carousel_container">
@@ -155,72 +154,6 @@
 		<p><ul><li>6:00pm: Dinner Reception</ul></li></p>
 	</div>
 
-    <div id="content_rsvp" class="content" style="display: none">
-	  <div style="width: 780px; margin: auto; padding: 0px">
-		<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG5icm9vVGZKdDVpVFo2c0FMTjZYbHc6MQ"
-			width="780" height="1300" frameborder="0" marginheight="0" marginwidth="0">
-			Loading...
-		</iframe>
-	  </div>
-    </div>
-
-    <div id="content_accomodations" class="content" style="display: none">
-      <h1>Where to stay</h1>
-	  <p>We have reserved a wedding block at 2 area hotels. These rates are applicable from <b>June 14th - 16th (Thursday - Sunday)</b>.</p>
-	  <p><b>Please note that you must book by Sunday, May 12, 2013 in order to receive the wedding rate at either hotel.</b></p>
-    <p>
-      <iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=210253291919340680085.0004d4c203ccb5c466239&amp;ie=UTF8&amp;t=m&amp;ll=42.786819,-71.501062&amp;spn=0.005512,0.00912&amp;z=16&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.com/maps/ms?msa=0&amp;msid=210253291919340680085.0004d4c203ccb5c466239&amp;ie=UTF8&amp;t=m&amp;ll=42.786819,-71.501062&amp;spn=0.005512,0.00912&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left" target="_blank">Wedding Hotels</a> in a larger map</small>
-    </p>
-	  <hr />
-	  
-    <div>
-      <div class="photo_left"><img src="photos/hotels/crowne-plaza.png" /></div>
-  	  <h3>Crowne Plaza (preferred hotel)</h3>
-  	  <p><b>Call 1.800.962.7482</b> and tell them that you are part of the Vajjhala/Ackerman Wedding Room Block in order to receive the discounted rate.</p>
-  	  <p><b>Driving Directions</b> can be found on the <a href="http://www.cpnashua.com/directions/" target="_blank">hotel website</a>.</p>
-      <div class="clearfix"></div>
-    </div>
-	  <hr />
-	  
-    <div>
-      <div class="photo_left"><img src="photos/hotels/marriott.png" /></div>
-  	  <h3>Courtyard by Marriott</h3>
-      Two options:
-      <p>
-        <b>1. <a href="http://www.marriott.com/hotels/travel/mhtnc-courtyard-nashua/?toDate=6/16/13&fromDate=6/13/13&app=resvlink" target="_blank">Book online</a></b>. Enter one of the following group codes (under Special Rates & Awards --> Group code) in order to receive the discounted rate.
-        <table cellspacing="0">
-          <tr>
-            <td>Type</td><td>Discount Code</td>
-          </tr>
-          <tr>
-            <td>King Bed</td><td><code>vajvaka</code></td>
-          </tr>
-          <tr>
-            <td>2 Double Beds</td><td><code>vajvajb</code></td>
-          </tr>
-        </table>
-      </p>
-      <p><b>2. Call 1.603.880.9100</b> and tell them that you are part of the Vajjhala/Ackerman Wedding Room Block in order to receive the discounted rate.</p>
-  	  <p><b>Driving Directions</b> can be found on the <a href="http://www.marriott.com/hotels/maps/travel/mhtnc-courtyard-nashua/" target="_blank">hotel website</a>.</p>
-    </div>
-    </div>
-
-    <div id="content_tourist" class="content" style="display: none">
-      <img src="photos/boston.png" />
-      <p>There are tons of places to see and visit in Boston (only 40 minute drive from Nashua). :)
-      <div style="float:left; padding: 10px; padding-left: 50px">
-        <a href="http://www.cityofboston.gov/visitors/" target="_blank">Visitors' Guide to Boston<br />
-        <img src="photos/boston-gov.png" /></a>
-      </div>
-      <div style="float: right; padding: 10px; padding-right: 50px">
-        <a href="http://www.tripadvisor.com/Attractions-g60745-Activities-Boston_Massachusetts.html" target="_blank">Trip Advisor Guide<br />
-        <img src="photos/trip-advisor.png" /></a>
-      </div>
-      <div class="clearfix"></div>
-      <p>There are also many events that take place in various towns in New Hampshire during the late spring/early summer season. Visit <a href="http://www.visitnh.gov/" target="_blank">http://www.visitnh.gov/</a> for more details.</p>
-      <img src="photos/uss-constitution.png">
-    </div>
-
     <div id="content_registries" class="content" style="display: none">
       <h2>Wedding Registries</h2>
 	  <p>We are registered at the following stores:</p>
@@ -231,7 +164,29 @@
     </div>
 
     <div id="content_photos" class="content" style="display: none">
-      Content for photos, etc...
+      <p>Here's what we have so far - wedding photos coming soon!</p>
+      <div class="photo_links">
+        <div class="photo_link">
+          <a href="https://plus.google.com/110945821232144599525/posts/7t7HeHCrf5z" title="Engagement Photos">
+            <img src="photos/photos/engagement.png" />
+          </a>
+        </div>
+        <div class="photo_link">
+          <a href="https://plus.google.com/110945821232144599525/posts/ZJvH5Baavsu" title="Ganesh Pooja (T-3 days)">
+            <img src="photos/photos/ganeshpooja.png" />
+          </a>
+        </div>
+        <div class="photo_link">
+          <a href="https://plus.google.com/110945821232144599525/posts/faD8FK9dZnQ" title="Guests Arriving">
+            <img src="photos/photos/guests.png" />
+          </a>
+        </div>
+        <div class="photo_link">
+          <a href="https://plus.google.com/110945821232144599525/posts/7YNRFQh3Yep" title="Mehendi Party">
+            <img src="photos/photos/mehendi.png" />
+          </a>
+        </div>
+      </div>
     </div>
 
     <div id="footer">
@@ -255,6 +210,7 @@
     // Start the carousel animation and hook up navigation
     carousel.start(get("photo_carousel"));
     nav.initialize(get("nav"));
+    daysSinceWedding(get("married_countup"));
     window.onhashchange = nav.onHashChange;
 
     if (window.location.hash != "") {

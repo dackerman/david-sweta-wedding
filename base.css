@@ -81,6 +81,15 @@ h1 {
     margin-right: 5px;
 }
 
+.photo_link {
+    float: left;
+    margin: 30px;
+}
+
+#married_countup {
+    font-size: 60%;  
+}
+
 #nav {
     background-color: #fff;
     border-radius: 10px 0px 0px 10px;
