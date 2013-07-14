@@ -81,6 +81,16 @@ h1 {
     margin-right: 5px;
 }
 
+.photo_category {
+    clear: both;
+}
+
+.photo_category h3 {
+    color: #444;
+    padding: 3px;
+    border-bottom: 1px dashed #ddd;
+}
+
 .photo_link {
     float: left;
     margin: 30px;
